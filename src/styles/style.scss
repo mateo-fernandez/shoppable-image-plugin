@@ -1,0 +1,81 @@
+$body-color: #fff1db;
+$blue-color: #1e90ff;
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: $body-color;
+  font-family: -apple-system, Helvetica Neue, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, sans-serif;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+// Element shoppable style
+.shoppable--img {
+  position: relative;
+  overflow: hidden;
+}
+
+.dot {
+  cursor: pointer;
+  background-color: #f00;
+  border-radius: 999px;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+
+  &:hover + .tooltip {
+    transition: opacity 50ms ease-in-out;
+  }
+}
+
+// Tooltip  style
+.tooltip {
+  opacity: 0;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+  width: 200px;
+  background: #fff;
+  padding: .75rem 1rem;
+  font-size: 13px;
+  border-radius: 4px;
+}
+
+.title--tooltip {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.description--tooltip {
+  position: relative;
+  text-align: justify;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.btn--tooltip {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-color: $blue-color;
+  border-radius: 3px;
+  padding: .25rem 1rem;
+}
