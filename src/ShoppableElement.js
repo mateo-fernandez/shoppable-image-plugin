@@ -1,6 +1,7 @@
 import {createPopper} from "@popperjs/core/lib/popper-lite";
 import offset from "@popperjs/core/lib/modifiers/offset";
 import arrow from "@popperjs/core/lib/modifiers/arrow";
+import flip from "@popperjs/core/lib/modifiers/flip";
 
 export const createShoppableElement = (parent, data) => {
   new ShoppableElement(parent, data);
@@ -20,10 +21,9 @@ class ShoppableElement {
     const tooltip = this.createTemplateTooltip(this.title, this.descr);
     this.parent.append(dot);
     this.parent.append(tooltip);
+    dot.onclick = () => tooltip.classList.toggle('hide');
 
     this.createPopperTooltip(dot, tooltip);
-
-    dot.onclick = () => tooltip.classList.toggle('hide');
   }
 
   createTemplateDot() {
@@ -58,10 +58,11 @@ class ShoppableElement {
   createPopperTooltip(reference, tooltip) {
     offset.options = {offset: [0, 10]};
     arrow.options = {padding: 5};
+    flip.options = { fallbackPlacements: ['left', 'top', 'bottom'] };
 
     createPopper(reference, tooltip, {
       placement: 'right',
-      modifiers: [offset, arrow],
+      modifiers: [offset, arrow, flip],
     });
   }
 }
