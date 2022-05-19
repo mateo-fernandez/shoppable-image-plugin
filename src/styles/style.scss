@@ -1,32 +1,13 @@
-$body-color: #fff1db;
 $blue-color: #1e90ff;
-
-html {
-  height: 100%;
-}
-
-body {
-  background-color: $body-color;
-  font-family: -apple-system, Helvetica Neue, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, sans-serif;
-  font-size: 12px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-h2 {
-  margin: 0;
-}
-
-p {
-  margin: 0;
-}
 
 // Element shoppable style
 .shoppable--img {
   position: relative;
   overflow: hidden;
+
+  img {
+    border-radius: 3px;
+  }
 }
 
 .dot {
@@ -49,9 +30,10 @@ p {
   width: 150px;
   background: #fff;
   padding: .75rem 1rem;
-  border-radius: 4px;
+  border-radius: 3px;
   opacity: 1;
   transition: opacity 50ms ease-in-out;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .3);
 
   &.hide, &.hide .arrow::before {
     opacity: 0;
