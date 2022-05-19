@@ -29,21 +29,17 @@ p {
 }
 
 .dot {
+  position: absolute;
   cursor: pointer;
   background-color: #f00;
   border-radius: 999px;
   height: 15px;
   width: 15px;
-  position: absolute;
-
-  &:hover + .tooltip {
-    transition: opacity 50ms ease-in-out;
-  }
 }
 
 // Tooltip  style
 .tooltip {
-  opacity: 0;
+  z-index: 100;
   cursor: default;
   display: flex;
   flex-direction: column;
@@ -54,6 +50,13 @@ p {
   padding: .75rem 1rem;
   font-size: 13px;
   border-radius: 4px;
+  opacity: 1;
+  transition: opacity 50ms ease-in-out;
+
+  &.hide, &.hide .arrow::before {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 .title--tooltip {
@@ -78,4 +81,38 @@ p {
   background-color: $blue-color;
   border-radius: 3px;
   padding: .25rem 1rem;
+}
+
+.arrow,
+.arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: inherit;
+}
+
+.arrow {
+  visibility: hidden;
+}
+
+.arrow::before {
+  visibility: visible;
+  content: '';
+  transform: rotate(45deg);
+}
+
+.tooltip[data-popper-placement^='top'] > .arrow {
+  bottom: -4px;
+}
+
+.tooltip[data-popper-placement^='bottom'] > .arrow {
+  top: -4px;
+}
+
+.tooltip[data-popper-placement^='left'] > .arrow {
+  right: -4px;
+}
+
+.tooltip[data-popper-placement^='right'] > .arrow {
+  left: -4px;
 }

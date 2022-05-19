@@ -1,11 +1,9 @@
-import {createShoppableImage} from './ShoppableImage';
+import {createShoppableElement} from './ShoppableElement';
 
-import 'normalize.css/normalize.css';
 import './styles/style.scss';
 
 const product0 = document.querySelector('#product-0');
 
-const refProduct01 = document.querySelector('#product-0 .dot[data-tl-id="01"]');
 const dataProduct01 = {
   coord: {
     x: '320px',
@@ -16,9 +14,8 @@ const dataProduct01 = {
     'dicta dolorem eum eveniet fugit ipsam iste iure nobis officiis porro possimus, recusandae saepe suscipit\n' +
     'totam velit veniam.'
 }
-createShoppableImage(product0, refProduct01, dataProduct01);
+createShoppableElement(product0, dataProduct01);
 
-const refProduct02 = document.querySelector('#product-0 .dot[data-tl-id="02"]');
 const dataProduct02 = {
   coord: {
     x: '90px',
@@ -29,9 +26,8 @@ const dataProduct02 = {
     'dicta dolorem eum eveniet fugit ipsam iste iure nobis officiis porro possimus, recusandae saepe suscipit\n' +
     'totam velit veniam.'
 }
-createShoppableImage(product0, refProduct02, dataProduct02);
+createShoppableElement(product0, dataProduct02);
 
-const refProduct03 = document.querySelector('#product-0 .dot[data-tl-id="03"]');
 const dataProduct03 = {
   coord: {
     x: '275px',
@@ -42,4 +38,4 @@ const dataProduct03 = {
     'dicta dolorem eum eveniet fugit ipsam iste iure nobis officiis porro possimus, recusandae saepe suscipit\n' +
     'totam velit veniam.'
 }
-createShoppableImage(product0, refProduct03, dataProduct03);
+createShoppableElement(product0, dataProduct03);
