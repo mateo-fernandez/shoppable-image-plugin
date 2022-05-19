@@ -13,6 +13,7 @@ class ShoppableElement {
     this.coord = content.coord;
     this.title = content.title;
     this.descr = content.description;
+    this.url = content.url;
     this.initElement()
   }
 
@@ -48,7 +49,7 @@ class ShoppableElement {
     const aTemplate = document.createElement('a');
     aTemplate.classList.add('btn--tooltip');
     aTemplate.textContent = 'Plus d\'infos';
-    aTemplate.href = '';
+    aTemplate.href = this.url;
     template.innerHTML += '<div class="arrow" data-popper-arrow></div>';
 
     template.append(titleTemplate, descrTemplate, aTemplate);

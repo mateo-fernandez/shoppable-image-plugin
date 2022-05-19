@@ -9,7 +9,8 @@
       "coord": {
         "x": "11%",
         "y": "81%"
-      }
+      },
+      "url": "https://google.fr"
     },
     {
       "title": "Baudrier Mammut",
@@ -17,7 +18,8 @@
       "coord": {
         "x": "34%",
         "y": "64%"
-      }
+      },
+      "url": ""
     },
     {
       "title": "Chalk 200g",
@@ -25,7 +27,8 @@
       "coord": {
         "x": "40%",
         "y": "73%"
-      }
+      },
+      "url": ""
     }
   ]
 }
