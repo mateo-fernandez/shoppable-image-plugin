@@ -1,0 +1,31 @@
+{
+  "title": "Premier ensemble",
+  "src": "img/img_0.png",
+  "width": "800",
+  "products": [
+    {
+      "title": "Produit 0.1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, architecto cupiditate dicta dolorem eum eveniet fugit ipsam iste iure nobis officiis porro possimus, recusandae saepe suscipit totam velit veniam.",
+      "coord": {
+        "x": "320px",
+        "y": "450px"
+      }
+    },
+    {
+      "title": "Produit 0.2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, architecto cupiditate dicta dolorem eum eveniet fugit ipsam iste iure nobis officiis porro possimus, recusandae saepe suscipit totam velit veniam.",
+      "coord": {
+        "x": "90px",
+        "y": "500px"
+      }
+    },
+    {
+      "title": "Produit 0.3",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, architecto cupiditate dicta dolorem eum eveniet fugit ipsam iste iure nobis officiis porro possimus, recusandae saepe suscipit totam velit veniam.",
+      "coord": {
+        "x": "275px",
+        "y": "400px"
+      }
+    }
+  ]
+}

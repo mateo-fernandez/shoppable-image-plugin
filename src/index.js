@@ -1,41 +1,9 @@
-import {createShoppableElement} from './ShoppableElement';
+import {createShoppableImage} from './ShoppableImage';
 
 import './styles/style.scss';
 
-const product0 = document.querySelector('#product-0');
+const img0 = document.querySelector('#img-0');
+createShoppableImage(img0, 'http://localhost:8080/config_img_0.json');
 
-const dataProduct01 = {
-  coord: {
-    x: '320px',
-    y: '450px',
-  },
-  title: 'Produit 01',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, architecto cupiditate\n' +
-    'dicta dolorem eum eveniet fugit ipsam iste iure nobis officiis porro possimus, recusandae saepe suscipit\n' +
-    'totam velit veniam.'
-}
-createShoppableElement(product0, dataProduct01);
-
-const dataProduct02 = {
-  coord: {
-    x: '90px',
-    y: '500px',
-  },
-  title: 'Produit 02',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, architecto cupiditate\n' +
-    'dicta dolorem eum eveniet fugit ipsam iste iure nobis officiis porro possimus, recusandae saepe suscipit\n' +
-    'totam velit veniam.'
-}
-createShoppableElement(product0, dataProduct02);
-
-const dataProduct03 = {
-  coord: {
-    x: '275px',
-    y: '400px',
-  },
-  title: 'Produit 02',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, architecto cupiditate\n' +
-    'dicta dolorem eum eveniet fugit ipsam iste iure nobis officiis porro possimus, recusandae saepe suscipit\n' +
-    'totam velit veniam.'
-}
-createShoppableElement(product0, dataProduct03);
+const img1 = document.querySelector('#img-1');
+createShoppableImage(img1, 'http://localhost:8080/config_img_0.json');

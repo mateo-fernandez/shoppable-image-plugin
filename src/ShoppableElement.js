@@ -3,16 +3,16 @@ import offset from "@popperjs/core/lib/modifiers/offset";
 import arrow from "@popperjs/core/lib/modifiers/arrow";
 import flip from "@popperjs/core/lib/modifiers/flip";
 
-export const createShoppableElement = (parent, data) => {
-  new ShoppableElement(parent, data);
+export const createShoppableElement = (parent, content) => {
+  new ShoppableElement(parent, content);
 }
 
 class ShoppableElement {
-  constructor(parent, data) {
+  constructor(parent, content) {
     this.parent = parent;
-    this.coord = data.coord;
-    this.title = data.title;
-    this.descr = data.description;
+    this.coord = content.coord;
+    this.title = content.title;
+    this.descr = content.description;
     this.initElement()
   }
 
