@@ -8,6 +8,7 @@ html {
 body {
   background-color: $body-color;
   font-family: -apple-system, Helvetica Neue, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, sans-serif;
+  font-size: 12px;
   height: 100%;
   display: flex;
   align-items: center;
@@ -44,11 +45,10 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: .5rem;
-  width: 200px;
+  gap: .4rem;
+  width: 150px;
   background: #fff;
   padding: .75rem 1rem;
-  font-size: 13px;
   border-radius: 4px;
   opacity: 1;
   transition: opacity 50ms ease-in-out;
@@ -60,11 +60,13 @@ p {
 }
 
 .title--tooltip {
-  text-transform: uppercase;
+  font-size: 1.25rem;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .description--tooltip {
+  font-size: 1rem;
   position: relative;
   text-align: justify;
   overflow: hidden;
@@ -74,12 +76,14 @@ p {
 }
 
 .btn--tooltip {
+  font-size: .75rem;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
   background-color: $blue-color;
   border-radius: 3px;
+  margin-top: .1rem;
   padding: .25rem 1rem;
 }
 

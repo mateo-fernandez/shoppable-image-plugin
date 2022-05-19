@@ -1,0 +1,55 @@
+{
+  "title": "Premier ensemble",
+  "src": "/img/img_1.png",
+  "width": "600",
+  "products": [
+    {
+      "title": "Horloge TAK",
+      "description": "Prix : 7.99€",
+      "coord": {
+        "x": "90%",
+        "y": "30%"
+      }
+    },
+    {
+      "title": "Tabouret LUL",
+      "description": "Prix : 15€",
+      "coord": {
+        "x": "86%",
+        "y": "85%"
+      }
+    },
+    {
+      "title": "Canapé KRAK",
+      "description": "Prix : 320€",
+      "coord": {
+        "x": "15%",
+        "y": "70%"
+      }
+    },
+    {
+      "title": "TV Samsangue",
+      "description": "Prix : 440€",
+      "coord": {
+        "x": "70%",
+        "y": "28%"
+      }
+    },
+    {
+      "title": "Chaise TANG",
+      "description": "Prix : 25€",
+      "coord": {
+        "x": "25%",
+        "y": "35%"
+      }
+    },
+    {
+      "title": "Table LACK",
+      "description": "Prix : 20€",
+      "coord": {
+        "x": "47%",
+        "y": "51%"
+      }
+    }
+  ]
+}
