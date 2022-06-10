@@ -4,11 +4,7 @@ import flip from "@popperjs/core/lib/modifiers/flip";
 import {createPopper} from "@popperjs/core/lib/popper-lite";
 import {ConfigElementType, CoordType} from "./types";
 
-export const createShoppableElement = (parent: Element, content: ConfigElementType) => {
-    new ShoppableElement(parent, content);
-}
-
-class ShoppableElement {
+export class ShoppableElement {
     private readonly parent: Element;
     private readonly title: string;
     private readonly descr: string;
