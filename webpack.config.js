@@ -1,25 +1,31 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'development',
-  entry: './src/index.js',
-  devtool: 'inline-source-map',
-  plugins: [],
-  module: {
-    rules: [
-      {
-        test: /\.s[ac]ss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
-      },
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-      },
-    ],
-  },
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public/build'),
-    clean: true,
-  },
+    mode: 'development',
+    entry: './src/index.ts',
+    output: {
+        filename: 'script.js',
+        path: path.resolve(__dirname, './public/uploads/bundles'),
+        clean: true,
+    },
+    devtool: 'inline-source-map',
+    resolve: {
+        extensions: ['.ts', '.js']
+    },
+    module: {
+        rules: [
+            {
+                test: /\.ts$/,
+                loader: 'ts-loader',
+            },
+            {
+                test: /\.s[ac]ss$/,
+                use: ['style-loader', 'css-loader', 'sass-loader'],
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader'],
+            },
+        ],
+    },
 };

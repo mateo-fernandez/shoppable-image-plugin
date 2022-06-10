@@ -1,12 +1,14 @@
 $blue-color: #1e90ff;
 
-// Element shoppable style
-.shoppable--img {
-  position: relative;
-  overflow: hidden;
+body {
+  margin: 0;
+  font-family: -apple-system, Helvetica Neue, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, sans-serif;
+}
 
+// Element shoppable style
+div[data-shoppable-img] {
   img {
-    border-radius: 3px;
+    width: 100%;
   }
 }
 
@@ -42,12 +44,15 @@ $blue-color: #1e90ff;
 }
 
 .title--tooltip {
+  margin: 0;
   font-size: 1.25rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .description--tooltip {
+  margin: 0;
+  width: 100%;
   font-size: 1rem;
   position: relative;
   text-align: justify;
